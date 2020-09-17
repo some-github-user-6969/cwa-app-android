@@ -745,6 +745,11 @@ object LocalData {
             .getString(R.string.preference_background_notification), false
     )
 
+    fun testCountryACME(): Boolean = getSharedPreferenceInstance().getBoolean(
+        CoronaWarnApplication.getAppContext()
+            .getString(R.string.preference_test_country_acme), false
+    )
+
     /****************************************************
      * ENCRYPTED SHARED PREFERENCES HANDLING
      ****************************************************/
